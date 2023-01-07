@@ -5,7 +5,7 @@ let express = require('express'),
     dbConfig = require('./database/db');
 
 // Express Route
-const dataRoute = require('routes/data.route');
+const dataRoute = require('./routes/data.route');
 
 // Connecting MongDB Database
 mongoose.Promise = global.Promise;
