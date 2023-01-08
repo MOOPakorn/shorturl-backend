@@ -46,7 +46,9 @@ router.route('/:id').get((req, res, next) => {
         if (error) {
             return next(error);
         } else {
-            res.json(data);
+            // console.log(data);
+            res.redirect(data.full)
+            // res.json(data);
         }
     })
 })
